@@ -103,6 +103,10 @@ a {
   text-decoration-color: rgba(0, 194, 243, 0.4);
 }
 
+.explainer-link {
+  text-decoration: none;
+}
+
 a:hover,
 a:focus-visible {
   color: var(--color-link-hover);
