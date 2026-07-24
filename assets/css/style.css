@@ -211,6 +211,12 @@ main {
   margin-bottom: 0.25em;
 }
 
+/* Smaller title for the banned-list explanation pages, whose titles run
+   long ("Why X Are Banned in Portal") — the site-wide h1 size wraps awkwardly. */
+.page-title--sm {
+  font-size: 1.85rem;
+}
+
 .page-subtitle {
   text-align: center;
   color: var(--color-text-muted);
