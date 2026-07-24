@@ -131,9 +131,9 @@ section.diagram-section {
 }
 
 .slot-box .slot-name {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   color: var(--color-teal);
-  font-size: 0.95rem;
+  font-size: 1.6rem;
   letter-spacing: 0.07em;
 }
 
@@ -322,6 +322,13 @@ section.diagram-section {
 .pos-left { grid-column: 1; grid-row: 2; }
 .pos-right { grid-column: 3; grid-row: 2; }
 
+/* Each flank-mini's "north" (creature slots + support zones, per the
+   single-flank diagram above) is rotated to face the Portal Deck hub. */
+.pos-bottom .flank-mini { transform: none; }
+.pos-top .flank-mini { transform: rotate(180deg); }
+.pos-left .flank-mini { transform: rotate(90deg); }
+.pos-right .flank-mini { transform: rotate(-90deg); }
+
 @media (max-width: 760px) {
   .battlefield {
     grid-template-columns: 1fr;
@@ -335,6 +342,14 @@ section.diagram-section {
   .pos-right { grid-row: 3; }
   .pos-left { grid-row: 4; }
   .pos-bottom { grid-row: 5; }
+
+  /* Mobile stacks every flank in one column below the hub, so the
+     left/right/bottom rotations no longer point toward it — reset to
+     upright for readability; only the top flank still needs to flip. */
+  .pos-left .flank-mini,
+  .pos-right .flank-mini {
+    transform: none;
+  }
 }
 
 .diagram-caption {

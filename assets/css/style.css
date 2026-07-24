@@ -185,7 +185,6 @@ code {
 .site-nav a:hover,
 .site-nav a:focus-visible {
   color: var(--color-teal);
-  border-bottom-color: var(--color-teal);
 }
 
 .site-nav a[aria-current="page"] {
