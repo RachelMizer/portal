@@ -100,17 +100,12 @@ h4 { font-size: 1.15rem; color: var(--color-purple); }
 
 a {
   color: var(--color-link);
-  text-decoration-color: rgba(0, 194, 243, 0.4);
-}
-
-.explainer-link {
   text-decoration: none;
 }
 
 a:hover,
 a:focus-visible {
   color: var(--color-link-hover);
-  text-decoration-color: currentColor;
 }
 
 hr {
@@ -125,6 +120,24 @@ ul, ol {
 
 li {
   margin-bottom: 0.1em;
+}
+
+/* Plain bullet lists get little four-pointed stars instead of discs.
+   Excludes lists that already opt out of bullets (nav, card list, deck grid). */
+ul:not(.site-nav):not(.card-list):not(.deck-grid) {
+  list-style: none;
+  padding-left: 1.2em;
+}
+
+ul:not(.site-nav):not(.card-list):not(.deck-grid) > li {
+  position: relative;
+}
+
+ul:not(.site-nav):not(.card-list):not(.deck-grid) > li::before {
+  content: "✦";
+  position: absolute;
+  left: -1.2em;
+  color: var(--color-teal);
 }
 
 blockquote {
@@ -231,6 +244,27 @@ main {
 
 section {
   margin-bottom: 3rem;
+}
+
+/* ---- Home hero ---- */
+.hero {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-size: 3.25rem;
+  background: linear-gradient(90deg, var(--color-lime), var(--color-teal) 55%, var(--color-cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-lead {
+  max-width: 58ch;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  line-height: 1.55;
 }
 
 /* ---- Anchor index / table of contents ---- */
