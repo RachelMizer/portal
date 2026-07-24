@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+*.log
+
+# Source/working files (PSDs, raw fonts, source text) — not part of the deployed site
+/dev/

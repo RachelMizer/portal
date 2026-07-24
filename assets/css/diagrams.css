@@ -1,0 +1,346 @@
+/* Battlefield / flank diagram styles — used only on diagrams.html */
+
+main.main--wide {
+  max-width: 1400px;
+}
+
+.diagram-intro {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-style: italic;
+  max-width: 60ch;
+  margin: 0 auto 2.5rem;
+}
+
+section.diagram-section {
+  margin-bottom: 4rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.75rem;
+  margin: 0 0 2rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.swatch {
+  width: 0.85em;
+  height: 0.85em;
+  border-radius: 2px;
+  display: inline-block;
+  flex: none;
+}
+
+.swatch.slot { background: var(--color-teal); }
+.swatch.artifact { background: var(--color-cyan); }
+.swatch.planeswalker { background: var(--color-purple); }
+.swatch.shared { background: var(--color-lime); }
+
+/* ---- Single flank ---- */
+.flank-board {
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 2.25rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.zone-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.zone-label {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 0.6em;
+}
+
+.zone-group {
+  flex: 1;
+  min-width: 220px;
+}
+
+.slot-row {
+  display: flex;
+  gap: 0.9rem;
+  align-items: end;
+}
+
+.slot-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.token-tile {
+  border: 1.5px dashed var(--color-teal);
+  border-radius: 6px;
+  background: rgba(24, 213, 146, 0.08);
+  color: var(--color-teal);
+  font-size: 0.66rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 0.4rem 0.3rem;
+}
+
+.token-tile.placeholder {
+  visibility: hidden;
+}
+
+.slot-caption {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0.75rem 0 0;
+}
+
+.slot-box {
+  flex: 1;
+  aspect-ratio: 5 / 6;
+  border: 2px solid var(--color-teal);
+  border-radius: 8px;
+  background: rgba(24, 213, 146, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.6rem;
+  position: relative;
+}
+
+.slot-box.creator {
+  border-width: 3px;
+  background: rgba(24, 213, 146, 0.1);
+}
+
+.slot-box .slot-name {
+  font-family: var(--font-heading);
+  color: var(--color-teal);
+  font-size: 0.95rem;
+  letter-spacing: 0.07em;
+}
+
+.slot-box .slot-role {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25em;
+}
+
+.side-zones {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.mini-zone {
+  flex: 1;
+  border-radius: 8px;
+  padding: 0.75rem 0.6rem;
+  text-align: center;
+  font-size: 0.78rem;
+}
+
+.mini-zone.artifact {
+  border: 1.5px dashed var(--color-cyan);
+  background: rgba(0, 194, 243, 0.05);
+  color: var(--color-cyan);
+}
+
+.mini-zone.planeswalker {
+  border: 1.5px dashed var(--color-purple);
+  background: rgba(104, 75, 196, 0.1);
+  color: var(--color-purple);
+}
+
+.mini-zone .cap {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 0.7rem;
+  margin-top: 0.2em;
+}
+
+.footer-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.diagram-pill {
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-raised);
+  border-radius: 999px;
+  padding: 0.5em 1.1em;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.diagram-pill strong {
+  color: var(--color-lime);
+  font-weight: normal;
+}
+
+/* ---- Battlefield (4 flanks) ---- */
+.battlefield {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 1.25rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.battlefield .hub {
+  grid-column: 2;
+  grid-row: 2;
+  background: var(--color-bg-panel);
+  border: 1.5px solid var(--color-lime);
+  border-radius: 10px;
+  padding: 1.1rem 1.3rem;
+  text-align: center;
+  width: 100%;
+  max-width: 220px;
+}
+
+.battlefield .hub .hub-title {
+  font-family: var(--font-heading);
+  color: var(--color-lime);
+  font-size: 0.9rem;
+  letter-spacing: 0.07em;
+}
+
+.battlefield .hub .hub-sub {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  margin-top: 0.4em;
+}
+
+.flank-mini {
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0.85rem;
+  width: 100%;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flank-mini .player-tag {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.flank-mini .player-tag .num {
+  font-family: var(--font-body);
+}
+
+.flank-mini .mini-slots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.mini-slot-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.mini-token-tile {
+  width: 34px;
+  height: 14px;
+  border: 1px dashed var(--color-teal);
+  border-radius: 3px;
+  background: rgba(24, 213, 146, 0.08);
+  color: var(--color-teal);
+  font-family: var(--font-body);
+  font-size: 0.42rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+}
+
+.mini-token-tile.placeholder {
+  visibility: hidden;
+}
+
+.flank-mini .mini-slot {
+  width: 34px;
+  height: 40px;
+  border: 1.5px solid var(--color-teal);
+  border-radius: 4px;
+  background: rgba(24, 213, 146, 0.06);
+}
+
+.flank-mini .mini-slot.creator {
+  border-width: 2.5px;
+}
+
+.flank-mini .mini-extras {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.flank-mini .mini-chip {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.mini-chip.a { background: var(--color-cyan); opacity: 0.8; }
+.mini-chip.p { background: var(--color-purple); opacity: 0.8; }
+
+.pos-top { grid-column: 2; grid-row: 1; }
+.pos-bottom { grid-column: 2; grid-row: 3; }
+.pos-left { grid-column: 1; grid-row: 2; }
+.pos-right { grid-column: 3; grid-row: 2; }
+
+@media (max-width: 760px) {
+  .battlefield {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .pos-top, .pos-bottom, .pos-left, .pos-right, .battlefield .hub {
+    grid-column: 1;
+  }
+  .pos-top { grid-row: 1; }
+  .battlefield .hub { grid-row: 2; }
+  .pos-right { grid-row: 3; }
+  .pos-left { grid-row: 4; }
+  .pos-bottom { grid-row: 5; }
+}
+
+.diagram-caption {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 1.5rem;
+}

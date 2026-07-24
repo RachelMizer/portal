@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Rules — PORTAL</title>
+  <meta name="description" content="The Core Rules for PORTAL, version 1.0 — a multiplayer, shared-deck, creature-slot combat format for Magic: The Gathering.">
+  <link rel="icon" type="image/png" href="assets/img/portal_logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a href="index.html" class="site-header__logo-link">
+      <img src="assets/img/long_logo.png" alt="PORTAL — a Magic: The Gathering format" class="site-header__logo">
+    </a>
+    <nav aria-label="Primary">
+      <ul class="site-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="banned-list.html">Banned List</a></li>
+        <li><a href="builds.html">Builds</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">PORTAL — Core Rules</h1>
+    <p class="page-subtitle">Version 1.0 &middot; A multiplayer, shared-deck, creature-slot combat game.</p>
+
+    <p style="text-align:center; margin-bottom: 2.5rem;">
+      <a href="diagrams.html">View the Battlefield Diagrams &rarr;</a>
+      — a visual reference for a single player's flank and the full 4-flank table layout.
+    </p>
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#materials">Materials Needed</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#components">Components</a></li>
+        <li><a href="#allowed-card-types">Allowed Card Types</a></li>
+        <li><a href="#deck-construction">Deck Construction Rules</a></li>
+        <li><a href="#surge-structure">Surge Structure</a></li>
+        <li><a href="#creature-slots">Creature Slot Rules</a></li>
+        <li><a href="#artifact-rules">Artifact Rules</a></li>
+        <li><a href="#planeswalker-rules">Planeswalker Rules</a></li>
+        <li><a href="#creature-death">Creature Death Rules</a></li>
+        <li><a href="#spell-behavior">Spell Behavior</a></li>
+        <li><a href="#king-or-queen">King or Queen of the Surge</a></li>
+        <li><a href="#portal-glitch">Portal Glitch (D-4)</a></li>
+      </ol>
+    </nav>
+
+    <section id="materials">
+      <h2><span class="num-prefix">0.</span> Materials Needed</h2>
+      <p>To play Portal, each player or table will need:</p>
+
+      <h3>Shared Materials</h3>
+      <ul>
+        <li><strong>1 Shared Portal Deck</strong> (150 cards)</li>
+        <li><strong>1 D-4 Glitch Die</strong></li>
+        <li><strong>1 Shared Exile Pile area</strong></li>
+        <li><strong>1 Shared Playmat or table space</strong></li>
+      </ul>
+
+      <h3>Per Player Materials</h3>
+      <ul>
+        <li><strong>20 Life tracker</strong> (dice, app, or counters)</li>
+        <li>
+          <strong>3 Creature Slot spaces</strong>
+          <ul>
+            <li>Slot 1 — <strong>Creator Slot</strong></li>
+            <li>Slot 2 — Middle</li>
+            <li>Slot 3 — Right</li>
+          </ul>
+        </li>
+        <li><strong>Artifact Zone</strong> (1–3 artifact spaces)</li>
+        <li><strong>Planeswalker Zone</strong> (1 planeswalker space)</li>
+        <li><strong>Personal Exile Pile</strong></li>
+        <li><strong>Mana Pool tracker</strong> (dice or counters)</li>
+        <li><strong>Optional:</strong> tokens, minions, or counters for cards that create them</li>
+      </ul>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="overview">
+      <h2><span class="num-prefix">1.</span> Overview</h2>
+      <p>
+        Portal is a multiplayer strategy game played with a <strong>shared 150-card deck</strong>.
+        Players draw from the same deck, exile cards, play creatures into three battlefield slots,
+        cast spells, deploy artifacts, and command planeswalkers while the Portal destabilizes
+        reality through unpredictable Glitch effects.
+      </p>
+      <p>Portal is fast, dramatic, and chaotic — every <strong>Surge</strong> reshapes the battlefield.</p>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="components">
+      <h2><span class="num-prefix">2.</span> Components</h2>
+      <ul>
+        <li><strong>Shared Portal Deck</strong> — 150 cards</li>
+        <li><strong>Player Life Totals</strong> — each player starts at 20</li>
+        <li>
+          <strong>Three Creature Slots per Player</strong>
+          <ul>
+            <li>Slot 1 (<strong>Creator Slot</strong>)</li>
+            <li>Slot 2 (Middle)</li>
+            <li>Slot 3 (Right)</li>
+          </ul>
+        </li>
+        <li><strong>Artifact Zone</strong></li>
+        <li><strong>Planeswalker Zone</strong></li>
+        <li><strong>Personal Exile Pile</strong></li>
+        <li><strong>Shared Exile Pile</strong></li>
+        <li><strong>D-4 Glitch Die</strong></li>
+      </ul>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="allowed-card-types">
+      <h2><span class="num-prefix">3.</span> Allowed Card Types</h2>
+      <p>Portal supports the following card types:</p>
+      <ul>
+        <li><strong>Creatures</strong></li>
+        <li><strong>Sorceries</strong></li>
+        <li><strong>Instants</strong></li>
+        <li><strong>Enchantments</strong></li>
+        <li><strong>Artifacts</strong></li>
+        <li><strong>Planeswalkers</strong></li>
+      </ul>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="deck-construction">
+      <h2><span class="num-prefix">4.</span> Deck Construction Rules</h2>
+
+      <h3><span class="num-prefix">4.1</span> Deck Size</h3>
+      <ul>
+        <li><strong>150 cards exactly</strong></li>
+      </ul>
+
+      <h3><span class="num-prefix">4.2</span> Colors</h3>
+      <ul>
+        <li><strong>Maximum two colors</strong></li>
+      </ul>
+
+      <h3><span class="num-prefix">4.3</span> Suggested Ratios (Recommendations Only)</h3>
+      <ul>
+        <li><strong>50–65% creatures</strong></li>
+        <li><strong>20–30% spells</strong></li>
+        <li><strong>10–20% artifacts</strong></li>
+        <li><strong>5–10% planeswalkers</strong></li>
+      </ul>
+
+      <h3><span class="num-prefix">4.4</span> Power Level Guidelines</h3>
+      <p><strong>Allowed:</strong> Big creatures, splashy spells, token generators, board wipes, buffs, removal, chaotic effects, supportive artifacts, mid-power planeswalkers.</p>
+      <p><strong>Not allowed:</strong> Infinite combos, tutors, cost-reduction engines, extra turns, "you win/lose the game" cards, oppressive lockouts.</p>
+
+      <h3><span class="num-prefix">4.5</span> Token-Creator Guidelines</h3>
+      <ul>
+        <li>10–15% of creatures may create tokens</li>
+        <li>Tokens should be simple (1/1, 2/2, or temporary)</li>
+        <li>Tokens should not create more tokens</li>
+      </ul>
+
+      <h3><span class="num-prefix">4.6</span> Bombs</h3>
+      <ul>
+        <li>10–15% bombs — dramatic but not game-ending.</li>
+      </ul>
+
+      <h3><span class="num-prefix">4.7</span> Exile Interaction</h3>
+      <ul>
+        <li>5–10% exile-related cards encouraged.</li>
+      </ul>
+
+      <h3><span class="num-prefix">4.8</span> Shuffle Rules</h3>
+      <ul>
+        <li>The Portal deck is <strong>never reshuffled</strong>.</li>
+        <li>Only King/Queen and Glitch effects manipulate its order.</li>
+      </ul>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="surge-structure">
+      <h2><span class="num-prefix">5.</span> Surge Structure</h2>
+      <p>Each <strong>Surge</strong> consists of four phases:</p>
+
+      <h3><span class="num-prefix">5.1</span> Draw Phase</h3>
+      <ul>
+        <li>Draw 4 cards.</li>
+        <li>Play 1 card.</li>
+        <li>Exile the remaining 3 face-down into personal exile.</li>
+      </ul>
+
+      <h3><span class="num-prefix">5.2</span> Play Phase</h3>
+      <p>Players may:</p>
+      <ul>
+        <li>Play <strong>one creature</strong></li>
+        <li>Play <strong>one artifact</strong> (optional)</li>
+        <li>Play <strong>one planeswalker</strong> (optional)</li>
+        <li>Play <strong>any number of spells</strong></li>
+        <li>Cast <strong>instants</strong> (only during their own turn)</li>
+        <li>Resolve effects immediately</li>
+        <li>Place creatures into slots (see Section 6)</li>
+        <li>Activate planeswalker abilities</li>
+        <li>Use artifact abilities</li>
+      </ul>
+
+      <h3><span class="num-prefix">5.3</span> Combat Phase</h3>
+      <ol>
+        <li>Declare Attackers</li>
+        <li>Declare Blockers</li>
+        <li>Assign Damage</li>
+        <li>Resolve Damage</li>
+        <li>Track damage for King or Queen of the Surge</li>
+      </ol>
+
+      <h3><span class="num-prefix">5.4</span> Upkeep Phase</h3>
+      <ul>
+        <li>Untap all creatures</li>
+        <li>Determine <strong>King or Queen of the Surge</strong></li>
+        <li>Resolve <strong>Portal Glitch</strong> (starting Surge 4)</li>
+      </ul>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="creature-slots">
+      <h2><span class="num-prefix">6.</span> Creature Slot Rules</h2>
+      <p>Each player has <strong>three creature slots</strong>:</p>
+      <ul>
+        <li><strong>Slot 1 — Creator Slot</strong></li>
+        <li>Slot 2 — Middle</li>
+        <li>Slot 3 — Right</li>
+      </ul>
+
+      <h3><span class="num-prefix">6.1</span> Creatures never shift automatically</h3>
+      <p>Empty slots stay empty.</p>
+
+      <h3><span class="num-prefix">6.2</span> Token-creator creatures force a shift</h3>
+      <p>When a creature that generates a token/minion/copy enters:</p>
+      <blockquote>
+        It <strong>MUST</strong> shift into the <strong>Creator Slot</strong> the first time.<br>
+        Later token-creators <strong>MAY</strong> shift into the Creator Slot or enter any empty slot.
+      </blockquote>
+      <p>If the Creator Slot is occupied, the creature there dies and goes to personal exile.</p>
+
+      <h3><span class="num-prefix">6.3</span> New creatures enter any empty slot</h3>
+      <p>Players choose which empty slot to fill.</p>
+
+      <h3><span class="num-prefix">6.4</span> If all slots are full</h3>
+      <p>The player must choose a creature to replace. The replaced creature dies and goes to personal exile.</p>
+
+      <h3><span class="num-prefix">6.5</span> Tokens/minions/copies</h3>
+      <ul>
+        <li>Always occupy the same slot as their creator card</li>
+        <li>Never use empty slots</li>
+        <li>Disappear if the creator card dies</li>
+      </ul>
+
+      <h3><span class="num-prefix">6.6</span> Slot identity</h3>
+      <ul>
+        <li>The <strong>Creator Slot</strong> has special rules</li>
+        <li>Slots 2 and 3 are interchangeable</li>
+        <li>Spells may target specific slots</li>
+      </ul>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="artifact-rules">
+      <h2><span class="num-prefix">7.</span> Artifact Rules</h2>
+      <p>Artifacts are <strong>non-creature permanents</strong> that sit beside your creature slots.</p>
+
+      <h3><span class="num-prefix">7.1</span> Artifact Placement</h3>
+      <p>Artifacts do <strong>not</strong> occupy creature slots. They sit in the <strong>Artifact Zone</strong>.</p>
+
+      <h3><span class="num-prefix">7.2</span> Artifact Behavior</h3>
+      <p>Artifacts:</p>
+      <ul>
+        <li>remain on the battlefield</li>
+        <li>may have activated abilities</li>
+        <li>may have passive effects</li>
+        <li>may interact with creatures or planeswalkers</li>
+        <li>may be destroyed by spells or combat damage (if they have toughness)</li>
+      </ul>
+
+      <h3><span class="num-prefix">7.3</span> Artifact Limits</h3>
+      <p>A player may control <strong>up to 3 artifacts</strong> at a time. Additional artifacts must replace an existing one.</p>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="planeswalker-rules">
+      <h2><span class="num-prefix">8.</span> Planeswalker Rules</h2>
+      <p>Planeswalkers are powerful allies that sit beside your artifacts.</p>
+
+      <h3><span class="num-prefix">8.1</span> Planeswalker Placement</h3>
+      <p>Planeswalkers do <strong>not</strong> occupy creature slots. They sit in the <strong>Planeswalker Zone</strong>.</p>
+
+      <h3><span class="num-prefix">8.2</span> Loyalty Abilities</h3>
+      <p>Planeswalkers may activate <strong>one loyalty ability per Surge</strong>.</p>
+
+      <h3><span class="num-prefix">8.3</span> Damage to Planeswalkers</h3>
+      <p>Players may attack planeswalkers directly. Damage removes loyalty counters.</p>
+
+      <h3><span class="num-prefix">8.4</span> Planeswalker Limits</h3>
+      <p>A player may control <strong>one planeswalker</strong> at a time. Playing a second replaces the first.</p>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="creature-death">
+      <h2><span class="num-prefix">9.</span> Creature Death Rules</h2>
+      <p>A creature dies when:</p>
+      <ul>
+        <li>Its toughness hits 0</li>
+        <li>It is replaced</li>
+        <li>A spell kills it</li>
+        <li>A Glitch or King/Queen effect replaces it</li>
+      </ul>
+      <p>When a creature dies:</p>
+      <ul>
+        <li>It goes to <strong>personal exile</strong></li>
+        <li>Its tokens/minions/copies disappear</li>
+        <li>No death triggers occur</li>
+        <li>No ETB/LTB triggers occur unless printed</li>
+      </ul>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="spell-behavior">
+      <h2><span class="num-prefix">10.</span> Spell Behavior</h2>
+
+      <h3><span class="num-prefix">10.1</span> Sorceries</h3>
+      <ul>
+        <li>Played during Play Phase</li>
+        <li>Resolve immediately</li>
+        <li>Go to personal exile</li>
+      </ul>
+
+      <h3><span class="num-prefix">10.2</span> Enchantments</h3>
+      <ul>
+        <li>Played during Play Phase</li>
+        <li>Resolve immediately</li>
+        <li>Apply effect</li>
+        <li>Go to personal exile</li>
+      </ul>
+
+      <h3><span class="num-prefix">10.3</span> Instants</h3>
+      <ul>
+        <li>May only be cast during your own turn</li>
+        <li>May be cast during your combat</li>
+        <li>Resolve immediately</li>
+        <li>Go to personal exile</li>
+      </ul>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="king-or-queen">
+      <h2><span class="num-prefix">11.</span> King or Queen of the Surge</h2>
+      <p>At the end of each Surge, one player rises above the chaos.</p>
+
+      <h3>Flavor</h3>
+      <p>
+        The battlefield hums with unstable energy. The Portal pulses, recognizing the
+        strongest presence — the one who struck hardest, or whose creatures tower above
+        the rest. This player becomes the <strong>King or Queen of the Surge</strong>,
+        gaining momentary dominion over the Portal itself.
+      </p>
+
+      <h3>Rules</h3>
+      <ol>
+        <li>Check combat damage dealt to players</li>
+        <li>The player who dealt the most damage becomes King or Queen</li>
+        <li>If no damage was dealt, the player with the highest creature power becomes King or Queen</li>
+        <li>The King or Queen may choose <strong>one card</strong> from personal exile and place it anywhere in the Portal deck</li>
+      </ol>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="portal-glitch">
+      <h2><span class="num-prefix">12.</span> Portal Glitch (D-4)</h2>
+      <p>Starting Surge 4, the Portal destabilizes reality.</p>
+
+      <h3>Flavor</h3>
+      <p>
+        The Portal is ancient, volatile, and hungry. Each Surge, its energy surges
+        unpredictably — warping exile, resurrecting forgotten threats, or shuffling fate
+        between players. The Glitch is the Portal's heartbeat, and no one escapes its
+        influence.
+      </p>
+
+      <h3>Rules</h3>
+      <p>Roll a D-4:</p>
+
+      <h3><span class="num-prefix">1</span> — Stable</h3>
+      <p>The Portal calms. Nothing happens.</p>
+
+      <h3><span class="num-prefix">2</span> — Creature Recall</h3>
+      <ul>
+        <li>Reveal top four cards of <strong>shared exile</strong></li>
+        <li>Roll a die equal to number of players</li>
+        <li>The chosen player may replace one of their creatures with one of the revealed cards</li>
+        <li>Replaced creature dies</li>
+      </ul>
+
+      <h3><span class="num-prefix">3</span> — Pass 1 Exile Card Left</h3>
+      <p>
+        Players keep their left-most exile card.
+        Pass the right-most card left.
+      </p>
+
+      <h3><span class="num-prefix">4</span> — Pass 2 Exile Cards Left</h3>
+      <p>Players keep their left-most exile…</p>
+      <p class="page-subtitle" style="text-align:left; margin-top:1em;">
+        <em>The source document cuts off mid-sentence here — this is the third draft in a row that's clipped at almost exactly the same length. Worth checking whatever tool you're exporting from for an output/length limit, since it looks like content past this point keeps getting lost before it reaches this file.</em>
+      </p>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Last updated: <time datetime="2026-07-23">July 23, 2026</time></p>
+    <p>PORTAL is an unofficial, fan-made format for Magic: The Gathering. Not affiliated with or endorsed by Wizards of the Coast.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

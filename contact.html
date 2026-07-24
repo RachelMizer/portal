@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — PORTAL</title>
+  <meta name="description" content="Send feedback, questions, or card suggestions for the PORTAL Magic: The Gathering format.">
+  <link rel="icon" type="image/png" href="assets/img/portal_logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a href="index.html" class="site-header__logo-link">
+      <img src="assets/img/long_logo.png" alt="PORTAL — a Magic: The Gathering format" class="site-header__logo">
+    </a>
+    <nav aria-label="Primary">
+      <ul class="site-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="banned-list.html">Banned List</a></li>
+        <li><a href="builds.html">Builds</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="page-title">Contact &amp; Feedback</h1>
+      <p class="page-subtitle">Found a rules gap, a banned-list disagreement, or want to suggest a card? Let us know.</p>
+
+      <!--
+        Google Form embed: once data/contact-config.js has a real
+        PORTAL_CONTACT_FORM_URL set, this iframe is shown automatically
+        and the mailto fallback below is hidden. See data/contact-config.js
+        for setup steps.
+      -->
+      <iframe
+        id="contact-form-iframe"
+        class="form-embed"
+        title="Portal feedback form"
+        hidden
+      ></iframe>
+
+      <div id="contact-form-fallback" class="panel" hidden>
+        <p>The feedback form isn't wired up yet — in the meantime, reach out directly:</p>
+        <!-- TODO: replace with the real contact address before publishing -->
+        <p><a class="btn" href="mailto:your-email@example.com?subject=Portal%20Feedback">Email Feedback</a></p>
+        <p class="form-fallback">(This link opens your default email app addressed to your-email@example.com — update it in contact.html.)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Last updated: <time datetime="2026-07-23">July 23, 2026</time></p>
+    <p>PORTAL is an unofficial, fan-made format for Magic: The Gathering. Not affiliated with or endorsed by Wizards of the Coast.</p>
+  </footer>
+
+  <script src="data/contact-config.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

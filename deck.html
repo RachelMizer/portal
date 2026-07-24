@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deck — PORTAL Builds</title>
+  <meta name="description" content="A Portal build's full card list.">
+  <link rel="icon" type="image/png" href="assets/img/portal_logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a href="index.html" class="site-header__logo-link">
+      <img src="assets/img/long_logo.png" alt="PORTAL — a Magic: The Gathering format" class="site-header__logo">
+    </a>
+    <nav aria-label="Primary">
+      <ul class="site-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="banned-list.html">Banned List</a></li>
+        <li><a href="builds.html">Builds</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p><a href="builds.html">&larr; Back to all builds</a></p>
+      <h1 class="page-title" id="deck-title">Loading…</h1>
+      <p class="page-subtitle" id="deck-meta" hidden></p>
+      <p id="deck-description" hidden></p>
+
+      <p id="deck-not-found" class="empty-state" hidden>
+        This build doesn't exist (or hasn't been added yet). <a href="builds.html">Browse all builds</a>.
+      </p>
+
+      <ul id="deck-card-list" class="card-list panel"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Last updated: <time datetime="2026-07-23">July 23, 2026</time></p>
+    <p>PORTAL is an unofficial, fan-made format for Magic: The Gathering. Not affiliated with or endorsed by Wizards of the Coast.</p>
+  </footer>
+
+  <script src="data/decks.js"></script>
+  <script src="assets/js/deck.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battlefield Diagrams — PORTAL</title>
+  <meta name="description" content="Reference diagrams for the PORTAL battlefield: a single player's flank layout, and all four flanks around the shared Portal deck.">
+  <link rel="icon" type="image/png" href="assets/img/portal_logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/diagrams.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a href="index.html" class="site-header__logo-link">
+      <img src="assets/img/long_logo.png" alt="PORTAL — a Magic: The Gathering format" class="site-header__logo">
+    </a>
+    <nav aria-label="Primary">
+      <ul class="site-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="banned-list.html">Banned List</a></li>
+        <li><a href="builds.html">Builds</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main--wide">
+    <p><a href="rules.html">&larr; Back to Core Rules</a></p>
+    <h1 class="page-title">Battlefield Diagrams</h1>
+    <p class="diagram-intro">Two reference diagrams: one flank as it sits in front of a single player, and all four flanks arranged around the shared Portal deck.</p>
+
+    <section class="diagram-section">
+      <h2>One Flank — A Single Player's Board</h2>
+      <p class="panel-note">Everything a player controls sits in this footprint: three creature slots up front, an Artifact Zone and Planeswalker Zone beside them, and the player's personal exile pile and life total off to the side.</p>
+
+      <div class="legend">
+        <span class="legend-item"><span class="swatch slot"></span> Creature Slot</span>
+        <span class="legend-item"><span class="swatch artifact"></span> Artifact Zone</span>
+        <span class="legend-item"><span class="swatch planeswalker"></span> Planeswalker Zone</span>
+        <span class="legend-item"><span class="swatch shared"></span> Exile / Life</span>
+      </div>
+
+      <div class="flank-board">
+        <div class="zone-row">
+          <div class="zone-group" style="flex: 2;">
+            <p class="zone-label">Creature Slots</p>
+            <div class="slot-row">
+              <div class="slot-column">
+                <div class="token-tile">Token / Minion / Copy</div>
+                <div class="slot-box creator">
+                  <span class="slot-name">Slot 1</span>
+                  <span class="slot-role">Creator — Far Left</span>
+                </div>
+              </div>
+              <div class="slot-column">
+                <div class="token-tile placeholder" aria-hidden="true"></div>
+                <div class="slot-box">
+                  <span class="slot-name">Slot 2</span>
+                  <span class="slot-role">Middle</span>
+                </div>
+              </div>
+              <div class="slot-column">
+                <div class="token-tile placeholder" aria-hidden="true"></div>
+                <div class="slot-box">
+                  <span class="slot-name">Slot 3</span>
+                  <span class="slot-role">Right</span>
+                </div>
+              </div>
+            </div>
+            <p class="slot-caption">Slot 1 is the Creator Slot — token-creator creatures must shift here first.</p>
+          </div>
+          <div class="zone-group">
+            <p class="zone-label">Support Zones</p>
+            <div class="side-zones">
+              <div class="mini-zone artifact">
+                Artifact Zone
+                <span class="cap">up to 3</span>
+              </div>
+              <div class="mini-zone planeswalker">
+                Planeswalker Zone
+                <span class="cap">up to 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-row">
+          <span class="diagram-pill"><strong>20</strong> Life Total</span>
+          <span class="diagram-pill">Personal Exile Pile — face-down, private</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="diagram-section">
+      <h2>Full Battlefield — Four Flanks</h2>
+      <p class="panel-note">Four players' flanks face inward toward the shared Portal deck at the table's center. Each mini-board below is the same flank shown above, condensed.</p>
+
+      <div class="battlefield">
+        <div class="pos-top">
+          <div class="flank-mini">
+            <span class="player-tag">Player <span class="num">2</span></span>
+            <div class="mini-slots">
+              <div class="mini-slot-column">
+                <div class="mini-token-tile">T/M/C</div>
+                <div class="mini-slot creator"></div>
+              </div>
+              <div class="mini-slot-column">
+                <div class="mini-token-tile placeholder" aria-hidden="true"></div>
+                <div class="mini-slot"></div>
+              </div>
+              <div class="mini-slot-column">
+                <div class="mini-token-tile placeholder" aria-hidden="true"></div>
+                <div class="mini-slot"></div>
+              </div>
+            </div>
+            <div class="mini-extras">
+              <span class="mini-chip a"></span>
+              <span class="mini-chip p"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pos-left">
+          <div class="flank-mini">
+            <span class="player-tag">Player <span class="num">1</span></span>
+            <div class="mini-slots">
+              <div class="mini-slot-column">
+                <div class="mini-token-tile">T/M/C</div>
+                <div class="mini-slot creator"></div>
+              </div>
+              <div class="mini-slot-column">
+                <div class="mini-token-tile placeholder" aria-hidden="true"></div>
+                <div class="mini-slot"></div>
+              </div>
+              <div class="mini-slot-column">
+                <div class="mini-token-tile placeholder" aria-hidden="true"></div>
+                <div class="mini-slot"></div>
+              </div>
+            </div>
+            <div class="mini-extras">
+              <span class="mini-chip a"></span>
+              <span class="mini-chip p"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hub">
+          <div class="hub-title">Shared Portal Deck</div>
+          <div class="hub-sub">150 cards &middot; never reshuffled</div>
+        </div>
+
+        <div class="pos-right">
+          <div class="flank-mini">
+            <span class="player-tag">Player <span class="num">3</span></span>
+            <div class="mini-slots">
+              <div class="mini-slot-column">
+                <div class="mini-token-tile">T/M/C</div>
+                <div class="mini-slot creator"></div>
+              </div>
+              <div class="mini-slot-column">
+                <div class="mini-token-tile placeholder" aria-hidden="true"></div>
+                <div class="mini-slot"></div>
+              </div>
+              <div class="mini-slot-column">
+                <div class="mini-token-tile placeholder" aria-hidden="true"></div>
+                <div class="mini-slot"></div>
+              </div>
+            </div>
+            <div class="mini-extras">
+              <span class="mini-chip a"></span>
+              <span class="mini-chip p"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pos-bottom">
+          <div class="flank-mini">
+            <span class="player-tag">Player <span class="num">4</span></span>
+            <div class="mini-slots">
+              <div class="mini-slot-column">
+                <div class="mini-token-tile">T/M/C</div>
+                <div class="mini-slot creator"></div>
+              </div>
+              <div class="mini-slot-column">
+                <div class="mini-token-tile placeholder" aria-hidden="true"></div>
+                <div class="mini-slot"></div>
+              </div>
+              <div class="mini-slot-column">
+                <div class="mini-token-tile placeholder" aria-hidden="true"></div>
+                <div class="mini-slot"></div>
+              </div>
+            </div>
+            <div class="mini-extras">
+              <span class="mini-chip a"></span>
+              <span class="mini-chip p"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="diagram-caption">Shown with 4 players — Portal supports multiplayer tables of other sizes with the same shared-deck hub.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Last updated: <time datetime="2026-07-23">July 23, 2026</time></p>
+    <p>PORTAL is an unofficial, fan-made format for Magic: The Gathering. Not affiliated with or endorsed by Wizards of the Coast.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
