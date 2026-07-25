@@ -47,8 +47,13 @@
         <li><a href="#planeswalker-rules">Planeswalker Rules</a></li>
         <li><a href="#creature-death">Creature Death Rules</a></li>
         <li><a href="#spell-behavior">Spell Behavior</a></li>
+        <li><a href="#draw-rules">Draw Rules</a></li>
         <li><a href="#king-or-queen">King or Queen of the Surge</a></li>
         <li><a href="#portal-glitch">Portal Glitch (D-4)</a></li>
+        <li><a href="#end-of-game">End of Game</a></li>
+        <li><a href="#optional-rules">Optional Rules</a></li>
+        <li><a href="#glossary">Glossary</a></li>
+        <li><a href="#final-notes">Final Notes</a></li>
       </ol>
     </nav>
 
@@ -253,9 +258,9 @@
 
       <h3><span class="num-prefix">6.5</span> Tokens/minions/copies</h3>
       <ul>
-        <li>Always occupy the same slot as their creator card</li>
+        <li>Always occupy the same slot as their parent</li>
         <li>Never use empty slots</li>
-        <li>Disappear if the creator card dies</li>
+        <li>Disappear if the parent dies</li>
       </ul>
 
       <h3><span class="num-prefix">6.6</span> Slot identity</h3>
@@ -354,6 +359,73 @@
       <a class="return-to-top" href="#top">Return to top</a>
     </section>
 
+    <section id="draw-rules">
+      <h2>📘 Draw Rules</h2>
+      <p>
+        Portal does not use a traditional hand. Any effect that instructs a player to
+        "draw a card" must follow special handling so the game remains consistent with
+        the one-card-per-Surge structure.
+      </p>
+      <p>A drawn card is not added to a hand. It becomes a temporary decision object that must be resolved immediately.</p>
+
+      <h3>Draw Resolution</h3>
+      <p>When a player draws a card in Portal, they must choose one of the following outcomes:</p>
+
+      <h4><span class="num-prefix">1.</span> Replace the Surge Card</h4>
+      <p>The drawn card may replace the card the player chose as their Surge card this turn.</p>
+      <ul>
+        <li>The original Surge card is moved to exile.</li>
+        <li>The drawn card becomes the active Surge card for the turn.</li>
+        <li>The player continues the turn using the new Surge card.</li>
+      </ul>
+
+      <h4><span class="num-prefix">2.</span> Exile the Drawn Card</h4>
+      <p>The drawn card may be placed directly into exile.</p>
+      <ul>
+        <li>The original Surge card remains in play or continues resolving normally.</li>
+        <li>The drawn card is not stored, held, or retained.</li>
+        <li>No additional Surge actions are granted.</li>
+      </ul>
+
+      <h3>Important Notes</h3>
+      <ul>
+        <li>A player may only have <strong>one Surge card per turn</strong>.</li>
+        <li>Drawn cards <strong>never</strong> enter a hand.</li>
+        <li>Drawn cards must be resolved immediately using one of the two options above.</li>
+        <li>This rule applies to all draw effects, including ETB triggers, spells, abilities, and replacement effects.</li>
+      </ul>
+
+      <h3>Example: Phyrexian Rager</h3>
+
+      <h4><span class="num-prefix">1.</span> Surge Selection</h4>
+      <p>The player chooses <strong>Phyrexian Rager</strong> as their Surge card for the turn.</p>
+
+      <h4><span class="num-prefix">2.</span> Surge Payment</h4>
+      <p>The player pays the Surge cost to play the card.</p>
+
+      <h4><span class="num-prefix">3.</span> Enter the Battlefield</h4>
+      <p>Phyrexian Rager enters the battlefield.</p>
+
+      <h4><span class="num-prefix">4.</span> ETB Trigger</h4>
+      <p>Its ability resolves: <strong>Draw a card and lose 1 life.</strong></p>
+
+      <h4><span class="num-prefix">5.</span> Draw Resolution</h4>
+      <p>The player must immediately choose one of the following:</p>
+      <p><strong>Option A — Replace the Surge Card</strong></p>
+      <ul>
+        <li>The drawn card replaces Phyrexian Rager as the Surge card.</li>
+        <li>Phyrexian Rager is moved to exile.</li>
+        <li>The drawn card becomes the active Surge card for the turn.</li>
+      </ul>
+      <p><strong>Option B — Exile the Drawn Card</strong></p>
+      <ul>
+        <li>The drawn card is placed directly into exile.</li>
+        <li>Phyrexian Rager remains on the battlefield.</li>
+        <li>No additional Surge actions are granted.</li>
+      </ul>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
     <section id="king-or-queen">
       <h2><span class="num-prefix">11.</span> King or Queen of the Surge</h2>
       <p>At the end of each Surge, one player rises above the chaos.</p>
@@ -377,7 +449,7 @@
     </section>
 
     <section id="portal-glitch">
-      <h2><span class="num-prefix">12.</span> Portal Glitch (D-4)</h2>
+      <h2><span class="num-prefix">12.</span> Portal Glitch (D-<span class="num-prefix">4</span>)</h2>
       <p>Starting Surge 4, the Portal destabilizes reality.</p>
 
       <h3>Flavor</h3>
@@ -396,29 +468,88 @@
 
       <h3><span class="num-prefix">2</span> — Creature Recall</h3>
       <ul>
-        <li>Reveal top four cards of <strong>shared exile</strong></li>
+        <li>Reveal the top four cards of <strong>shared exile</strong></li>
         <li>Roll a die equal to number of players</li>
         <li>The chosen player may replace one of their creatures with one of the revealed cards</li>
-        <li>Replaced creature dies</li>
+        <li>The replaced creature dies and goes to personal exile</li>
       </ul>
 
-      <h3><span class="num-prefix">3</span> — Pass 1 Exile Card Left</h3>
-      <p>
-        Players keep their left-most exile card.
-        Pass the right-most card left.
-      </p>
+      <h3><span class="num-prefix">3</span> — Pass <span class="num-prefix">1</span> Exile Card Left</h3>
+      <ul>
+        <li>Each player keeps their left-most exile card</li>
+        <li>Each player passes their right-most exile card to the player on their left</li>
+        <li>Passed cards enter that player's personal exile</li>
+      </ul>
 
-      <h3><span class="num-prefix">4</span> — Pass 2 Exile Cards Left</h3>
-      <p>Players keep their left-most exile…</p>
-      <p class="page-subtitle" style="text-align:left; margin-top:1em;">
-        <em>The source document cuts off mid-sentence here — this is the third draft in a row that's clipped at almost exactly the same length. Worth checking whatever tool you're exporting from for an output/length limit, since it looks like content past this point keeps getting lost before it reaches this file.</em>
-      </p>
+      <h3><span class="num-prefix">4</span> — Pass <span class="num-prefix">2</span> Exile Cards Left</h3>
+      <ul>
+        <li>Each player keeps their left-most exile card</li>
+        <li>Each player passes their two right-most exile cards to the player on their left</li>
+        <li>Passed cards enter that player's personal exile</li>
+      </ul>
       <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="end-of-game">
+      <h2><span class="num-prefix">13.</span> End of Game</h2>
+      <p>The game ends when:</p>
+      <ul>
+        <li>Only one player remains above 0 life</li>
+        <li>A Glitch effect eliminates all but one player</li>
+        <li>Players agree to end the session</li>
+      </ul>
+      <p>The last surviving player is the <strong>Champion of the Portal</strong>.</p>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="optional-rules">
+      <h2><span class="num-prefix">14.</span> Optional Rules</h2>
+
+      <h3><span class="num-prefix">14.1</span> Team Play</h3>
+      <p>Teams share strategy but not exile piles, slots, or permanents.</p>
+
+      <h3><span class="num-prefix">14.2</span> Boss Mode</h3>
+      <p>One player begins with:</p>
+      <ul>
+        <li>+20 life</li>
+        <li>A fourth creature slot</li>
+        <li>Two planeswalker slots</li>
+        <li>A permanent +1 Surge bonus each turn</li>
+      </ul>
+
+      <h3><span class="num-prefix">14.3</span> Sudden Collapse</h3>
+      <p>At Surge 10, roll the Glitch die twice each Surge.</p>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="glossary">
+      <h2><span class="num-prefix">15.</span> Glossary</h2>
+      <ul>
+        <li><strong>Surge</strong> — A full turn cycle consisting of Draw, Play, Combat, Upkeep.</li>
+        <li><strong>Creator Slot</strong> — The left-most creature slot with special rules.</li>
+        <li><strong>Exile</strong> — Cards removed from play; personal exile is unique to each player.</li>
+        <li><strong>Glitch</strong> — A random Portal effect triggered starting Surge 4.</li>
+        <li><strong>Token</strong> — A temporary creature created by another card.</li>
+        <li><strong>Planeswalker Zone</strong> — The area where a player's planeswalker sits.</li>
+        <li><strong>Artifact Zone</strong> — The area where a player's artifacts sit.</li>
+      </ul>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="final-notes">
+      <h2><span class="num-prefix">16.</span> Final Notes</h2>
+      <p>
+        Portal is designed for dramatic swings, chaotic energy, and fast tactical decisions.<br>
+        Every Surge reshapes the battlefield.<br>
+        Every Glitch rewrites fate.<br>
+        Every creature slot tells a story.
+      </p>
+      <p>Welcome to the Portal.</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Last updated: <time datetime="2026-07-23">July 23, 2026</time></p>
+    <p>Last updated: <time datetime="2026-07-25">July 25, 2026</time></p>
     <p>PORTAL is an unofficial, fan-made format for Magic: The Gathering. Not affiliated with or endorsed by Wizards of the Coast.</p>
   </footer>
 
