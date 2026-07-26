@@ -1030,15 +1030,16 @@ window.PORTAL_DECKS = [
     slug: "soul-warden",
     name: "Portal of the Soul Warden",
     category: "Mono-White",
-    tagline: "Mono-White Portal Deck",
+    tagline: "Mono-White Portal Deck — Budget Build (< $200)",
     description: [
-      "A mono-white Portal deck focused on lifegain, blink synergy, flyers, and holy battlefield control."
+      "A fully playable, balanced Portal deck built to stay under $200 total.",
+      "This list emphasizes efficiency, exile synergy, simple token interactions, and clean slot behavior."
     ],
-    costNote: null,
-    structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Soul Warden" },
+    costNote: "Estimated total deck cost: $160–$190 (based on average NM non-foil market prices).",
+    structure: { creatures: 76, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Soul Warden" },
     creatureGroups: [
       { label: "Low-Cost Creatures (30)", cards: [
-        { name: "Soul Warden", qty: 4 },
+        { name: "Soul Warden", qty: 4, note: "Healer" },
         { name: "Thraben Inspector", qty: 4 },
         { name: "Selfless Savior", qty: 4 },
         { name: "Giant Killer", qty: 4 },
@@ -1047,23 +1048,23 @@ window.PORTAL_DECKS = [
         { name: "Knight of Grace", qty: 4 },
         { name: "Benalish Marshal", qty: 2 }
       ]},
-      { label: "Mid-Cost Creatures (35)", cards: [
+      { label: "Mid-Cost Creatures (31)", cards: [
         { name: "Blade Splicer", qty: 4 },
         { name: "Flickerwisp", qty: 4 },
         { name: "Banisher Priest", qty: 4 },
         { name: "Elite Spellbinder", qty: 4 },
         { name: "Guardian of Ghirapur", qty: 4 },
         { name: "Serra Angel", qty: 4 },
-        { name: "Archon of Emeria", qty: 2 },
-        { name: "Dawnfeather Eagle", qty: 3 },
-        { name: "Aerial Responder", qty: 2 },
-        { name: "Guardian of the Guildpact", qty: 2 }
+        { name: "Sunblast Angel", qty: 3 },
+        { name: "Angel of Sanctions", qty: 2 },
+        { name: "Archon of Emeria", qty: 2 }
       ]},
       { label: "High-Cost Creatures (15)", cards: [
+        { name: "Emeria Shepherd", qty: 3 },
+        { name: "Angel of Serenity", qty: 3 },
+        { name: "Sun Titan", qty: 3 },
         { name: "Seraph of Dawn", qty: 3 },
-        { name: "Kor Skyfisher", qty: 4 },
-        { name: "Luminarch Aspirant", qty: 4 },
-        { name: "Attended Knight", qty: 4 }
+        { name: "Dawnfeather Eagle", qty: 3 }
       ]}
     ],
     spellGroups: [
@@ -1085,13 +1086,32 @@ window.PORTAL_DECKS = [
     ],
     artifacts: [
       { name: "Mind Stone", qty: 4 },
-      { name: "Golden Urn", qty: 4 }
+      { name: "Golden Urn", qty: 4 },
+      { name: "Healer's Heirloom", qty: 4 },
+      { name: "Staff of the Sun Magus", qty: 4 },
+      { name: "Marble Diamond", qty: 4 }
     ],
-    planeswalkers: [],
-    healer: null,
+    planeswalkers: [
+      { name: "Ajani Goldmane", qty: 2 },
+      { name: "Ajani, Strength of the Pride", qty: 2 },
+      { name: "Gideon Blackblade", qty: 2 },
+      { name: "Elspeth Tirel", qty: 2 },
+      { name: "The Eternal Wanderer", qty: 2 }
+    ],
+    healer: {
+      name: "Soul Warden",
+      cost: "W",
+      type: "Creature — Human Cleric",
+      pt: "1/1",
+      rules: [
+        "Healer Surge Action: If you spend your entire Surge healing, you heal 3 life or 3 toughness (Portal rule).",
+        "Passive (Card's Original Ability): Whenever another creature enters the battlefield, you gain 1 life.",
+        "Creator Slot Bonus (Portal rule): If Soul Warden is in the Creator Slot, healing also restores 1 life to you."
+      ],
+      flavor: "Her presence brings calm to the chaos of the Portal."
+    },
     closing: null,
-    incomplete: true,
-    incompleteNote: "The source file cuts off mid-list partway through the Artifacts section — everything past “Golden Urn ×4” (the rest of the Artifacts, the Planeswalkers, and the Healer profile) is missing from dev/decks/mono white/# Portal of the Soul Warden.txt. This page shows only what's present in the source."
+    incomplete: false
   },
 
   {
