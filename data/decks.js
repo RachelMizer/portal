@@ -28,7 +28,7 @@
 window.PORTAL_DECKS = [
   {
     slug: "stormfire-engine",
-    name: "🔥🌊 Portal of the Stormfire Engine",
+    name: "Portal of the Stormfire Engine",
     category: "Combo Decks",
     tagline: "Izzet (Blue-Red) Portal Combo Deck",
     description: [
@@ -136,7 +136,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "bloomlight-cove",
-    name: "🌿 Portal of the Bloomlight Cove",
+    name: "Portal of the Bloomlight Cove",
     category: "Combo Decks",
     tagline: "Mono-Green Portal Combo Deck",
     description: [
@@ -230,7 +230,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "deepwild-ascent",
-    name: "🌊 Portal of the Deepwild Ascent",
+    name: "Portal of the Deepwild Ascent",
     category: "Combo Decks",
     tagline: "Mono-Blue Portal Combo Deck",
     description: [
@@ -326,7 +326,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "nightglass-assembly",
-    name: "💀🌊 Portal of the Nightglass Assembly",
+    name: "Portal of the Nightglass Assembly",
     category: "Combo Decks",
     tagline: "Dimir (Blue-Black) Portal Deck — Budget Build (< $200)",
     description: [
@@ -423,7 +423,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "rotbloom-coven",
-    name: "🌿💀 Portal of the Rotbloom Coven",
+    name: "Portal of the Rotbloom Coven",
     category: "Combo Decks",
     tagline: "Golgari (Green-Black) Portal Combo Deck",
     description: [
@@ -519,7 +519,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "tidebinder",
-    name: "🌊 Portal of the Tidebinder",
+    name: "Portal of the Tidebinder",
     category: "Mono-Blue",
     tagline: "Mono-Blue Portal Deck",
     description: [
@@ -604,7 +604,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "stormcallers-mirage",
-    name: "🌊 Stormcaller's Mirage",
+    name: "Stormcaller's Mirage",
     category: "Mono-Blue",
     tagline: "Mono-Blue Portal Deck",
     description: [
@@ -689,7 +689,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "verdant-colossus",
-    name: "🌿 Portal of the Verdant Colossus",
+    name: "Portal of the Verdant Colossus",
     category: "Mono-Green",
     tagline: "Mono-Green Portal Deck",
     description: [
@@ -774,7 +774,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "wildheart-convergence",
-    name: "🌱 Portal of the Wildheart Convergence",
+    name: "Portal of the Wildheart Convergence",
     category: "Mono-Green",
     tagline: "Mono-Green Portal Deck",
     description: [
@@ -859,7 +859,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "blazeborn-legion",
-    name: "🔥 Portal of the Blazeborn Legion",
+    name: "Portal of the Blazeborn Legion",
     category: "Mono-Red",
     tagline: "Mono-Red Portal Deck",
     description: [
@@ -944,7 +944,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "emberheart",
-    name: "🔥 Portal of the Emberheart",
+    name: "Portal of the Emberheart",
     category: "Mono-Red",
     tagline: "Mono-Red Portal Deck",
     description: [
@@ -1029,7 +1029,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "soul-warden",
-    name: "🌕 Portal of the Soul Warden",
+    name: "Portal of the Soul Warden",
     category: "Mono-White",
     tagline: "Mono-White Portal Deck",
     description: [
@@ -1097,7 +1097,7 @@ window.PORTAL_DECKS = [
 
   {
     slug: "white-knight",
-    name: "🌕 Portal of the White Knight",
+    name: "Portal of the White Knight",
     category: "Mono-White",
     tagline: "Mono-White Portal Deck",
     description: [
