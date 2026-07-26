@@ -2,7 +2,7 @@
 
 A static site for **Portal** — a multiplayer, shared-deck, creature-slot combat format for Magic: The Gathering.
 
-See `BUILDLOG.md` for a session-by-session history of what's been built and why.
+A session-by-session build log is kept locally at `dev/BUILDLOG.md` (gitignored, not part of the deployed site or repo history).
 
 ## Structure
 
