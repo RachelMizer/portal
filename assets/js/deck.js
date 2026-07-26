@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var qty = card.qty ? card.qty + "× " : "";
       li.appendChild(document.createTextNode(qty + card.name));
       if (card.note) {
-        var note = el("span", "card-note", " — " + card.note);
+        var note = el("span", "card-note", " (" + card.note + ")");
         li.appendChild(note);
       }
       ul.appendChild(li);

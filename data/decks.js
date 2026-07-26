@@ -975,7 +975,6 @@ window.PORTAL_DECKS = [
         { name: "Territorial Hellkite", qty: 2 }
       ]},
       { label: "High-Cost Creatures (15)", cards: [
-        { name: "Ahn-Crop Crasher", qty: 3 },
         { name: "Charging Monstrosaur", qty: 3 },
         { name: "Emberwilde Augur", qty: 3 },
         { name: "Hissing Iguanar", qty: 3 },
@@ -1104,9 +1103,9 @@ window.PORTAL_DECKS = [
       "A mono-white Portal deck focused on lifegain, soldiers, blink synergy, and holy battlefield control."
     ],
     costNote: null,
-    structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Auriok Champion" },
+    structure: { creatures: 74, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Auriok Champion" },
     creatureGroups: [
-      { label: "Low-Cost Creatures (30)", cards: [
+      { label: "Low-Cost Creatures (26)", cards: [
         { name: "Auriok Champion", qty: 4 },
         { name: "Auriok Steelshaper", qty: 4 },
         { name: "Giver of Runes", qty: 4 },
@@ -1115,7 +1114,7 @@ window.PORTAL_DECKS = [
         { name: "Kor Skyfisher", qty: 4 },
         { name: "Luminarch Aspirant", qty: 2 }
       ]},
-      { label: "Mid-Cost Creatures (35)", cards: [
+      { label: "Mid-Cost Creatures (33)", cards: [
         { name: "Wall of Omens", qty: 4 },
         { name: "Skyclave Cleric", qty: 4 },
         { name: "Militia Bugler", qty: 4 },
