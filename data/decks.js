@@ -14,6 +14,7 @@
 //     category: "Category Name",         // groups decks on builds.html
 //     tagline: "Color identity / archetype line",
 //     description: ["Paragraph one.", "Paragraph two."],
+//     image: "assets/img/decks/file.webp" | null, // thumbnail/hero art, keyed off the healer card
 //     costNote: "Estimated total deck cost: $X" | null,
 //     structure: { creatures, spells, artifacts, planeswalkers, healer },
 //     creatureGroups: [ { label, note?, cards: [{ name, qty, note? }] } ],
@@ -142,6 +143,7 @@ window.PORTAL_DECKS = [
     description: [
       "A mono-green combo deck focused on ETB value loops, token engines, recursion, and slot-based growth. All creatures cost 4 or less and follow Portal's strict creature rules."
     ],
+    image: "assets/img/decks/essence_warden.webp",
     costNote: null,
     structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Essence Warden" },
     creatureGroups: [
@@ -236,6 +238,7 @@ window.PORTAL_DECKS = [
     description: [
       "A mono-blue combo deck focused on bounce loops, ETB draw triggers, spell recursion, slot manipulation, and artifact-supported tempo. All creatures cost 4 or less and follow Portal's strict creature rules."
     ],
+    image: "assets/img/decks/healer_of_the_glade.webp",
     costNote: null,
     structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Healer of the Glade" },
     creatureGroups: [
@@ -333,6 +336,7 @@ window.PORTAL_DECKS = [
       "A tactical, evasive Dimir Portal deck built to stay under $200 total.",
       "This list emphasizes flying creatures, death triggers, bounce effects, discard, and battlefield manipulation."
     ],
+    image: "assets/img/decks/cleric_of_chill_depths.webp",
     costNote: "Estimated total deck cost: $155–$185",
     structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Cleric of Chill Depths" },
     creatureGroups: [
@@ -420,6 +424,7 @@ window.PORTAL_DECKS = [
       "Green primary, Black support — tokens, fungus engines, recursion, sacrifice loops.",
       "All creatures cost 4 or less and follow Portal's strict color rules."
     ],
+    image: "assets/img/decks/golgari_brownscale.webp",
     costNote: null,
     structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Golgari Brownscale" },
     creatureGroups: [
@@ -515,6 +520,7 @@ window.PORTAL_DECKS = [
     description: [
       "A mono-blue Portal deck focused on illusions, tempo control, scrying, flying creatures, and battlefield manipulation."
     ],
+    image: "assets/img/decks/sage_of_epityr.webp",
     costNote: null,
     structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Sage of Epityr" },
     creatureGroups: [
@@ -600,6 +606,7 @@ window.PORTAL_DECKS = [
     description: [
       "A mono-blue Portal deck focused on card draw, tempo control, flying creatures, illusions, blink effects, and battlefield trickery."
     ],
+    image: "assets/img/decks/sage_of_epityr.webp",
     costNote: null,
     structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Sage of Epityr" },
     creatureGroups: [
@@ -685,6 +692,7 @@ window.PORTAL_DECKS = [
     description: [
       "A mono-green Portal deck focused on stompy creatures, fight spells, battlefield dominance, and overwhelming board presence."
     ],
+    image: "assets/img/decks/essence_warden.webp",
     costNote: null,
     structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Essence Warden" },
     creatureGroups: [
@@ -770,6 +778,7 @@ window.PORTAL_DECKS = [
     description: [
       "A synergy-driven mono-green Portal deck focused on elves, lifegain, creature swarms, and explosive battlefield scaling."
     ],
+    image: "assets/img/decks/essence_warden.webp",
     costNote: null,
     structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Essence Warden" },
     creatureGroups: [

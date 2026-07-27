@@ -53,7 +53,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var a = document.createElement("a");
       a.href = "deck.html?slug=" + encodeURIComponent(deck.slug);
-      a.innerHTML = withOldstyleDigits(deck.name);
+
+      if (deck.image) {
+        var thumb = document.createElement("img");
+        thumb.className = "deck-grid__thumb";
+        thumb.src = deck.image;
+        thumb.alt = "";
+        thumb.loading = "lazy";
+        a.appendChild(thumb);
+      }
+
+      var label = document.createElement("span");
+      label.className = "deck-grid__label";
+      label.innerHTML = withOldstyleDigits(deck.name);
+      a.appendChild(label);
 
       li.appendChild(a);
       list.appendChild(li);

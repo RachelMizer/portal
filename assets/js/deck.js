@@ -66,6 +66,15 @@ document.addEventListener("DOMContentLoaded", function () {
     return ul;
   }
 
+  // Hero image (healer card art)
+  if (deck.image) {
+    var hero = document.createElement("img");
+    hero.className = "deck-hero-image";
+    hero.src = deck.image;
+    hero.alt = deck.name + " — healer card art";
+    contentEl.appendChild(hero);
+  }
+
   // Description paragraphs
   (deck.description || []).forEach(function (paragraph) {
     contentEl.appendChild(el("p", null, paragraph));
