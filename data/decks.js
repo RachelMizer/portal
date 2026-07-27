@@ -407,17 +407,7 @@ window.PORTAL_DECKS = [
       ],
       flavor: "Her calm freezes the panic of battle, turning fear into focus."
     },
-    closing: {
-      title: "Why This Deck Stays Under $200",
-      items: [
-        "Uses budget evasive creatures",
-        "No premium mythic Dimir staples",
-        "Bounce + removal spells are inexpensive",
-        "Artifacts are simple and affordable",
-        "Healer is cheap and defensive"
-      ],
-      note: "This deck is sneaky, tactical, and Portal-friendly — perfect for players who love evasion, discard, and battlefield control."
-    },
+    closing: null,
     incomplete: false
   },
 
