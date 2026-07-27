@@ -237,7 +237,7 @@ window.PORTAL_DECKS = [
       "A mono-blue combo deck focused on bounce loops, ETB draw triggers, spell recursion, slot manipulation, and artifact-supported tempo. All creatures cost 4 or less and follow Portal's strict creature rules."
     ],
     costNote: null,
-    structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Merfolk Looter" },
+    structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Healer of the Glade" },
     creatureGroups: [
       { label: "Low-Cost Creatures (30)", cards: [
         { name: "Merfolk Looter", qty: 4 },
@@ -299,13 +299,13 @@ window.PORTAL_DECKS = [
       { name: "Narset, Parter of Veils", qty: 2 }
     ],
     healer: {
-      name: "Merfolk Looter",
-      cost: "1U",
-      type: "Creature — Merfolk Rogue",
-      pt: "1/1",
+      name: "Healer of the Glade",
+      cost: "G",
+      type: "Creature — Elemental",
+      pt: "1/2",
       rules: [
         "Surge Action: Heal 3 life or 3 toughness.",
-        "Passive: Draw a card, then exile a card.",
+        "Passive: When Healer of the Glade enters the battlefield, you gain 3 life.",
         "Creator Slot Bonus: Healing also restores 1 life to you."
       ]
     },
@@ -866,10 +866,10 @@ window.PORTAL_DECKS = [
       "A mono-red Portal deck focused on minotaurs, elementals, burn, haste, and explosive battlefield swings."
     ],
     costNote: null,
-    structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Lone Missionary" },
+    structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Crimson Acolyte" },
     creatureGroups: [
       { label: "Low-Cost Creatures (30)", cards: [
-        { name: "Lone Missionary", qty: 4 },
+        { name: "Firebrand Archer", qty: 4 },
         { name: "Firedrinker Satyr", qty: 4 },
         { name: "Zurgo Bellstriker", qty: 4 },
         { name: "Rakdos Cackler", qty: 4 },
@@ -928,13 +928,13 @@ window.PORTAL_DECKS = [
       { name: "Sarkhan, the Dragonspeaker", qty: 2 }
     ],
     healer: {
-      name: "Lone Missionary",
+      name: "Crimson Acolyte",
       cost: "1W",
       type: "Creature — Human Cleric",
       pt: "1/1",
       rules: [
         "Surge Action: Heal 3 life or 3 toughness.",
-        "Passive: When Lone Missionary enters the battlefield, you gain 3 life.",
+        "Passive: Pay W: Target creature gains protection from red until end of turn.",
         "Creator Slot Bonus: Healing also restores 1 life to you."
       ]
     },
@@ -954,7 +954,7 @@ window.PORTAL_DECKS = [
     structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Lone Missionary" },
     creatureGroups: [
       { label: "Low-Cost Creatures (30)", cards: [
-        { name: "Lone Missionary", qty: 4 },
+        { name: "Firebrand Archer", qty: 4 },
         { name: "Ghitu Lavarunner", qty: 4 },
         { name: "Viashino Pyromancer", qty: 4 },
         { name: "Fanatical Firebrand", qty: 4 },
@@ -1123,7 +1123,7 @@ window.PORTAL_DECKS = [
       "A mono-white Portal deck focused on lifegain, soldiers, blink synergy, and holy battlefield control."
     ],
     costNote: null,
-    structure: { creatures: 74, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Auriok Champion" },
+    structure: { creatures: 74, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Ardenvale Paladin" },
     creatureGroups: [
       { label: "Low-Cost Creatures (26)", cards: [
         { name: "Auriok Champion", qty: 4 },
@@ -1185,13 +1185,13 @@ window.PORTAL_DECKS = [
       { name: "Serra the Benevolent", qty: 2 }
     ],
     healer: {
-      name: "Auriok Champion",
-      cost: "WW",
-      type: "Creature — Human Cleric",
-      pt: "1/1",
+      name: "Ardenvale Paladin",
+      cost: "1W",
+      type: "Creature — Human Knight",
+      pt: "2/2",
       rules: [
         "Surge Action: Heal 3 life or 3 toughness.",
-        "Passive: Gain 1 life whenever another creature enters the battlefield.",
+        "Passive: Adamant — If at least three white mana was spent to cast Ardenvale Paladin, another target creature gains lifelink until end of turn when it enters the battlefield.",
         "Creator Slot Bonus: Healing also restores 1 life to you."
       ]
     },
