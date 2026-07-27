@@ -46,6 +46,7 @@
         <li><a href="#artifact-rules">Artifact Rules</a></li>
         <li><a href="#planeswalker-rules">Planeswalker Rules</a></li>
         <li><a href="#creature-death">Creature Death Rules</a></li>
+        <li><a href="#healer-rules">Healer Rules</a></li>
         <li><a href="#spell-behavior">Spell Behavior</a></li>
         <li><a href="#draw-rules">Draw Rules</a></li>
         <li><a href="#king-or-queen">King or Queen of the Surge</a></li>
@@ -53,7 +54,6 @@
         <li><a href="#end-of-game">End of Game</a></li>
         <li><a href="#optional-rules">Optional Rules</a></li>
         <li><a href="#glossary">Glossary</a></li>
-        <li><a href="#healer-rules">Healer Rules</a></li>
       </ol>
     </nav>
 
@@ -331,17 +331,79 @@
       <a class="return-to-top" href="#top">Return to top</a>
     </section>
 
-    <section id="spell-behavior">
-      <h2><span class="num-prefix">10.</span> Spell Behavior</h2>
+    <section id="healer-rules">
+      <h2><span class="num-prefix">10.</span> Healer Rules</h2>
+      <p>Healers are support units that exist outside normal gameplay. They provide healing and optional flavor or mechanical bonuses depending on how the deck builder chooses to use them.</p>
 
-      <h3><span class="num-prefix">10.1</span> Sorceries</h3>
+      <h3><span class="num-prefix">10.1</span> Choosing a Healer</h3>
+      <p>A deck builder may select a Healer in one of two ways:</p>
+      <p><strong>Flavor Healer</strong> — A real Magic card chosen purely for theme. Its printed text is ignored, and standard healing rules apply.</p>
+      <p><strong>Mechanical Healer</strong> — A real Magic card chosen because its printed abilities matter to the deck. The deck builder must ensure these abilities do not create infinite loops or break Portal balance.</p>
+
+      <h3><span class="num-prefix">10.2</span> Healer Immunity</h3>
+      <p>The Healer is never treated as a creature. It cannot:</p>
+      <ul>
+        <li>attack</li>
+        <li>be attacked</li>
+        <li>be targeted</li>
+        <li>be destroyed</li>
+        <li>enter the battlefield</li>
+      </ul>
+      <p>It functions as a protected support unit outside normal gameplay.</p>
+
+      <h3><span class="num-prefix">10.3</span> Healer Position</h3>
+      <p>The Healer never enters the battlefield. It remains next to the Portal for the entire game and must be visible to all players.</p>
+
+      <h3><span class="num-prefix">10.4</span> Standard Healing Action</h3>
+      <p>All Healers share the same baseline healing ability:</p>
+      <blockquote><strong>Sacrifice your Surge (turn):</strong> Heal 3 life, or heal a creature you control for 3 toughness.</blockquote>
+      <p>This is the default healing effect unless a Mechanical Healer explicitly overrides it.</p>
+
+      <h3><span class="num-prefix">10.5</span> Placeholder Healer</h3>
+      <p>If a deck builder does not wish to choose a card for flavor or mechanics, they may use a:</p>
+      <ul>
+        <li>token</li>
+        <li>counter</li>
+        <li>blank placeholder card</li>
+      </ul>
+      <p>This simply reminds the player that the standard healing action is available.</p>
+
+      <h3><span class="num-prefix">10.6</span> One Healer Per Deck</h3>
+      <p>Each deck may designate exactly one Healer. This prevents stacking healing effects or creating multi-Healer loops.</p>
+
+      <h3><span class="num-prefix">10.7</span> Healing Timing</h3>
+      <p>Healing resolves immediately when the Surge is sacrificed. It cannot be responded to, countered, or interrupted.</p>
+
+      <h3><span class="num-prefix">10.8</span> No Healer Interaction</h3>
+      <p>Healers cannot be:</p>
+      <ul>
+        <li>copied</li>
+        <li>cloned</li>
+        <li>flickered</li>
+        <li>bounced</li>
+        <li>exiled</li>
+        <li>recurred</li>
+        <li>targeted</li>
+        <li>destroyed</li>
+      </ul>
+      <p>They exist outside the battlefield and cannot interact with game objects.</p>
+
+      <h3><span class="num-prefix">10.9</span> Healer Visibility</h3>
+      <p>The Healer (or placeholder) must remain visible to all players at all times.</p>
+      <a class="return-to-top" href="#top">Return to top</a>
+    </section>
+
+    <section id="spell-behavior">
+      <h2><span class="num-prefix">11.</span> Spell Behavior</h2>
+
+      <h3><span class="num-prefix">11.1</span> Sorceries</h3>
       <ul>
         <li>Played during Play Phase</li>
         <li>Resolve immediately</li>
         <li>Go to personal exile</li>
       </ul>
 
-      <h3><span class="num-prefix">10.2</span> Enchantments</h3>
+      <h3><span class="num-prefix">11.2</span> Enchantments</h3>
       <ul>
         <li>Played during Play Phase</li>
         <li>Resolve immediately</li>
@@ -349,7 +411,7 @@
         <li>Go to personal exile</li>
       </ul>
 
-      <h3><span class="num-prefix">10.3</span> Instants</h3>
+      <h3><span class="num-prefix">11.3</span> Instants</h3>
       <ul>
         <li>May only be cast during your own turn</li>
         <li>May be cast during your combat</li>
@@ -360,7 +422,7 @@
     </section>
 
     <section id="draw-rules">
-      <h2><span class="num-prefix">11.</span> Draw Rules</h2>
+      <h2><span class="num-prefix">12.</span> Draw Rules</h2>
       <p>
         Portal does not use a traditional hand. Any effect that instructs a player to
         "draw a card" must follow special handling so the game remains consistent with
@@ -427,7 +489,7 @@
     </section>
 
     <section id="king-or-queen">
-      <h2><span class="num-prefix">12.</span> King or Queen of the Surge</h2>
+      <h2><span class="num-prefix">13.</span> King or Queen of the Surge</h2>
       <p>At the end of each Surge, one player rises above the chaos.</p>
       <blockquote><em>If you'd like to omit this mechanic, doing so will not break the game.</em></blockquote>
 
@@ -450,7 +512,7 @@
     </section>
 
     <section id="portal-glitch">
-      <h2><span class="num-prefix">13.</span> Portal Glitch (D-<span class="num-prefix">4</span>)</h2>
+      <h2><span class="num-prefix">14.</span> Portal Glitch (D-<span class="num-prefix">4</span>)</h2>
       <p>Starting Surge 4, the Portal destabilizes reality.</p>
       <blockquote><em>If you'd like to omit this mechanic, doing so will not break the game.</em></blockquote>
 
@@ -493,7 +555,7 @@
     </section>
 
     <section id="end-of-game">
-      <h2><span class="num-prefix">14.</span> End of Game</h2>
+      <h2><span class="num-prefix">15.</span> End of Game</h2>
       <p>The game ends when:</p>
       <ul>
         <li>Only one player remains above 0 life</li>
@@ -505,12 +567,12 @@
     </section>
 
     <section id="optional-rules">
-      <h2><span class="num-prefix">15.</span> Optional Rules</h2>
+      <h2><span class="num-prefix">16.</span> Optional Rules</h2>
 
-      <h3><span class="num-prefix">15.1</span> Team Play</h3>
+      <h3><span class="num-prefix">16.1</span> Team Play</h3>
       <p>Teams share strategy but not exile piles, slots, or permanents.</p>
 
-      <h3><span class="num-prefix">15.2</span> Boss Mode</h3>
+      <h3><span class="num-prefix">16.2</span> Boss Mode</h3>
       <p>One player begins with:</p>
       <ul>
         <li>+20 life</li>
@@ -519,13 +581,13 @@
         <li>A permanent +1 Surge bonus each turn</li>
       </ul>
 
-      <h3><span class="num-prefix">15.3</span> Sudden Collapse</h3>
+      <h3><span class="num-prefix">16.3</span> Sudden Collapse</h3>
       <p>At Surge 10, roll the Glitch die twice each Surge.</p>
       <a class="return-to-top" href="#top">Return to top</a>
     </section>
 
     <section id="glossary">
-      <h2><span class="num-prefix">16.</span> Glossary</h2>
+      <h2><span class="num-prefix">17.</span> Glossary</h2>
       <ul>
         <li><strong>Surge</strong> — A full turn cycle consisting of Draw, Play, Combat, Upkeep.</li>
         <li><strong>Creator Slot</strong> — The left-most creature slot with special rules.</li>
@@ -535,68 +597,6 @@
         <li><strong>Planeswalker Zone</strong> — The area where a player's planeswalker sits.</li>
         <li><strong>Artifact Zone</strong> — The area where a player's artifacts sit.</li>
       </ul>
-      <a class="return-to-top" href="#top">Return to top</a>
-    </section>
-
-    <section id="healer-rules">
-      <h2><span class="num-prefix">17.</span> Healer Rules</h2>
-      <p>Healers are support units that exist outside normal gameplay. They provide healing and optional flavor or mechanical bonuses depending on how the deck builder chooses to use them.</p>
-
-      <h3><span class="num-prefix">17.1</span> Choosing a Healer</h3>
-      <p>A deck builder may select a Healer in one of two ways:</p>
-      <p><strong>Flavor Healer</strong> — A real Magic card chosen purely for theme. Its printed text is ignored, and standard healing rules apply.</p>
-      <p><strong>Mechanical Healer</strong> — A real Magic card chosen because its printed abilities matter to the deck. The deck builder must ensure these abilities do not create infinite loops or break Portal balance.</p>
-
-      <h3><span class="num-prefix">17.2</span> Healer Immunity</h3>
-      <p>The Healer is never treated as a creature. It cannot:</p>
-      <ul>
-        <li>attack</li>
-        <li>be attacked</li>
-        <li>be targeted</li>
-        <li>be destroyed</li>
-        <li>enter the battlefield</li>
-      </ul>
-      <p>It functions as a protected support unit outside normal gameplay.</p>
-
-      <h3><span class="num-prefix">17.3</span> Healer Position</h3>
-      <p>The Healer never enters the battlefield. It remains next to the Portal for the entire game and must be visible to all players.</p>
-
-      <h3><span class="num-prefix">17.4</span> Standard Healing Action</h3>
-      <p>All Healers share the same baseline healing ability:</p>
-      <blockquote><strong>Sacrifice your Surge (turn):</strong> Heal 3 life, or heal a creature you control for 3 toughness.</blockquote>
-      <p>This is the default healing effect unless a Mechanical Healer explicitly overrides it.</p>
-
-      <h3><span class="num-prefix">17.5</span> Placeholder Healer</h3>
-      <p>If a deck builder does not wish to choose a card for flavor or mechanics, they may use a:</p>
-      <ul>
-        <li>token</li>
-        <li>counter</li>
-        <li>blank placeholder card</li>
-      </ul>
-      <p>This simply reminds the player that the standard healing action is available.</p>
-
-      <h3><span class="num-prefix">17.6</span> One Healer Per Deck</h3>
-      <p>Each deck may designate exactly one Healer. This prevents stacking healing effects or creating multi-Healer loops.</p>
-
-      <h3><span class="num-prefix">17.7</span> Healing Timing</h3>
-      <p>Healing resolves immediately when the Surge is sacrificed. It cannot be responded to, countered, or interrupted.</p>
-
-      <h3><span class="num-prefix">17.8</span> No Healer Interaction</h3>
-      <p>Healers cannot be:</p>
-      <ul>
-        <li>copied</li>
-        <li>cloned</li>
-        <li>flickered</li>
-        <li>bounced</li>
-        <li>exiled</li>
-        <li>recurred</li>
-        <li>targeted</li>
-        <li>destroyed</li>
-      </ul>
-      <p>They exist outside the battlefield and cannot interact with game objects.</p>
-
-      <h3><span class="num-prefix">17.9</span> Healer Visibility</h3>
-      <p>The Healer (or placeholder) must remain visible to all players at all times.</p>
       <a class="return-to-top" href="#top">Return to top</a>
     </section>
   </main>
