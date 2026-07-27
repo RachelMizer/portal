@@ -123,30 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
     contentEl.appendChild(renderCardList(deck.planeswalkers));
   }
 
-  // Healer
-  if (deck.healer) {
-    var h = deck.healer;
-    contentEl.appendChild(el("h2", null, "Healer — " + h.name));
-    var healerPanel = el("div", "panel");
-    var metaParts = ["Cost: " + h.cost, "Type: " + h.type, "Power/Toughness: " + h.pt];
-    if (h.keywords) metaParts.push("Keywords: " + h.keywords);
-    metaParts.forEach(function (line) {
-      healerPanel.appendChild(el("p", null, line));
-    });
-    healerPanel.appendChild(el("h4", null, "Portal Healer Rules"));
-    var rulesList = el("ul");
-    (h.rules || []).forEach(function (rule) {
-      rulesList.appendChild(el("li", null, rule));
-    });
-    healerPanel.appendChild(rulesList);
-    if (h.flavor) {
-      var quote = document.createElement("blockquote");
-      quote.textContent = "“" + h.flavor + "”";
-      healerPanel.appendChild(quote);
-    }
-    contentEl.appendChild(healerPanel);
-  }
-
   // Closing themed section (Combo Themes / budget rationale / etc.)
   if (deck.closing) {
     contentEl.appendChild(el("h2", null, deck.closing.title));
