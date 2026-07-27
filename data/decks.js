@@ -866,10 +866,10 @@ window.PORTAL_DECKS = [
       "A mono-red Portal deck focused on minotaurs, elementals, burn, haste, and explosive battlefield swings."
     ],
     costNote: null,
-    structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Firebrand Archer" },
+    structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Lone Missionary" },
     creatureGroups: [
       { label: "Low-Cost Creatures (30)", cards: [
-        { name: "Firebrand Archer", qty: 4 },
+        { name: "Lone Missionary", qty: 4 },
         { name: "Firedrinker Satyr", qty: 4 },
         { name: "Zurgo Bellstriker", qty: 4 },
         { name: "Rakdos Cackler", qty: 4 },
@@ -928,13 +928,13 @@ window.PORTAL_DECKS = [
       { name: "Sarkhan, the Dragonspeaker", qty: 2 }
     ],
     healer: {
-      name: "Firebrand Archer",
-      cost: "1R",
-      type: "Creature — Human Archer",
-      pt: "2/1",
+      name: "Lone Missionary",
+      cost: "1W",
+      type: "Creature — Human Cleric",
+      pt: "1/1",
       rules: [
         "Surge Action: Heal 3 life or 3 toughness.",
-        "Passive: Whenever you cast a noncreature spell, Firebrand Archer deals 1 damage to each opponent.",
+        "Passive: When Lone Missionary enters the battlefield, you gain 3 life.",
         "Creator Slot Bonus: Healing also restores 1 life to you."
       ]
     },
@@ -951,10 +951,10 @@ window.PORTAL_DECKS = [
       "A mono-red Portal deck focused on haste, burn, dragons, aggressive tempo, and battlefield volatility."
     ],
     costNote: null,
-    structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Firebrand Archer" },
+    structure: { creatures: 80, spells: 30, artifacts: 20, planeswalkers: 10, healer: "Lone Missionary" },
     creatureGroups: [
       { label: "Low-Cost Creatures (30)", cards: [
-        { name: "Firebrand Archer", qty: 4 },
+        { name: "Lone Missionary", qty: 4 },
         { name: "Ghitu Lavarunner", qty: 4 },
         { name: "Viashino Pyromancer", qty: 4 },
         { name: "Fanatical Firebrand", qty: 4 },
@@ -1012,13 +1012,13 @@ window.PORTAL_DECKS = [
       { name: "Sarkhan the Masterless", qty: 2 }
     ],
     healer: {
-      name: "Firebrand Archer",
-      cost: "1R",
-      type: "Creature — Human Archer",
-      pt: "2/1",
+      name: "Lone Missionary",
+      cost: "1W",
+      type: "Creature — Human Cleric",
+      pt: "1/1",
       rules: [
         "Surge Action: Heal 3 life or 3 toughness.",
-        "Passive: Whenever you cast a noncreature spell, Firebrand Archer deals 1 damage to each opponent.",
+        "Passive: When Lone Missionary enters the battlefield, you gain 3 life.",
         "Creator Slot Bonus: Healing also restores 1 life to you."
       ]
     },
