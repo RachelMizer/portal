@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     structureList.appendChild(el("li", null, "Spells: " + s.spells));
     structureList.appendChild(el("li", null, "Artifacts: " + s.artifacts));
     structureList.appendChild(el("li", null, "Planeswalkers: " + s.planeswalkers));
-    structureList.appendChild(el("li", null, "Healer: " + s.healer));
+    structureList.appendChild(el("li", null, "Suggested Healer: " + s.healer));
     contentEl.appendChild(structureList);
   }
 
